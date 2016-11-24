@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DESCARGAS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="https://docs.google.com/spreadsheets/d/1RI-C9OpmWnaPX0i4FS1qHtfF4dRRvCNc0jPBLL-yMnw/edit#gid=1934881077" target='_blank'>REPORTE</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Distrito Federal<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+
+                <li><button onclick="dia()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Dia</button></li>
+                <li><button onclick="capital()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Capital Media </button></li>
+                <li><button onclick="cronica()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> LA CRONICA </button></li>
+                <li><button onclick="diarioImagen()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">diario imagen</button></li>
+                <li><button onclick="record()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Record</button></li>
+                <!--<li><button onclick="excelsior()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Excelsior</button></li>-->
+                <li><button onclick="razon()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Razon</button></li>
+                <li><button onclick="laPrensa()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Prensa</button></li>
+                <li><button onclick="jornadaM()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Jornada de Mexico</button></li>
+                <li><button onclick="solMexico()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Sol de Mexico</button></li>
+                <li><button onclick="puntoCritico()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> punto critico </button></li>
+                <li><button onclick="universal()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Universal</button></li>
+                <!--<li><button onclick="impacto()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">IMPACTO</button></li>-->
+                <!--<li><button onclick="cambio()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Cambio</button></li>-->
+                <li><button onclick="financiero()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Financiero</button></li>
+                <li><button onclick="economista()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Economista</button></li>
+                <!--<li><button onclick="esto()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> ESTO </button></li>-->
+                <li><button onclick="mundoExpress()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">MUNDO EXPRESS</button></li>
+                <li><button onclick="proceso()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> proceso </button></li>
+                <li><button onclick="revistaAr()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Revista ar.</button></li>
+                <!--http://www.antenainformativa.com.mx/prensadigital/PERIODICOS%20JUEVES/             CHECAR ESTE PEX
+                http://epaper.milenio.com/newspaper.html?edition=4&date=2016-06-14 ESTO ES PARA LOS MILENIOS
+                  -->
+
+
+
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guadalajara <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="ntrGdl()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Ntr Guadalajara</button></li>
+                <li><button onclick="crionicaJalisco()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Cronica de Jalisco</button></li>
+                <li><button onclick="bahia()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Tribuna de la bahia</button></li>
+                <li><button onclick="am_lagos()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">am DE LAGOS DE MORENO</button></li>
+                <li><button onclick="notiarandas()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">NOTI ARANDAS</button></li>
+                <li><button onclick="meridiano_vallarta()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Meridiano de Vallarta</button></li>
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estados 1<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+
+                <li><button onclick="expreso()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Expreso</button></li>
+                <li><button onclick="huasteca()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Huasteca</button></li>
+                <li><button onclick="meridiano_nayarit()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Meridiano de Nayarit</button></li>
+                <li><button onclick="cabos()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Tribuna de los Cabos</button></li>
+                <li><button onclick="contexto()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> contexto de durango </button></li>
+                <li><button onclick="calameo()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">calameo</button></li>
+                <li><button onclick="redes()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">redes del sur</button></li>
+                <li><button onclick="miled()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">MILED</button></li>
+                <li><button onclick="sintesisTlaxcala()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">sintesis tlaxcala</button></li>
+                <li><button onclick="diarioObjetivo()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> diario Objetivo </button></li>
+                <li><button onclick="porvenir()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> El Porvenir </button></li>
+                <!-- <li><button onclick="siglo_durango()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El siglo de durango</button></li>
+                <li><button onclick="gato()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">gato</button></li>
+                <li><button onclick="imagenQuintanaRoo()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">imagen quintana roo</button></li>
+                <li><button onclick="liberaldelsur()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Liberal del Sur</button></li>
+                <li><button onclick="yumpu()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">YUMPU</button></li>
+                <li><button onclick="verdad_roo()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Verdad de Quintana Roo</button></li>
+                <li><button onclick="primera_hora()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Primera Hora</button></li>
+                <li><button onclick="am_leon()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">am DE LEON</button></li>
+                <li><button onclick="expreso_victoria()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Expreso Victoria</button></li>
+                <li><button onclick="razon_tampico()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Razon Tampico</button></li>
+                <li><button onclick="expreso_matamoros()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Expreso Matamoros</button></li>
+                <li><button onclick="expreso_mante()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Expreso Mante</button></li> -->
+
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estados 2<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="iCampeche()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">I de Campeche</button></li>
+                <li><button onclick="diarioYucatan()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Diario de Yucatan</button></li>
+                <li><button onclick="ecos()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Ecos de la Costa</button></li>
+                <li><button onclick="despertar()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Despertar</button></li>
+                <li><button onclick="noticias()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Noticias</button></li>
+                <li><button onclick="fronteraTijuana()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Frontera de Tijuana</button></li>
+                <li><button onclick="imparcial()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Imparcial</button></li>
+                <li><button onclick="horizonte_m()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Horizonte de Monterrey</button></li>
+                <li><button onclick="union_morelos()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Union de Morelos</button></li>
+                <li><button onclick="enfoque()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Enfoque Informativo</button></li>
+                <li><button onclick="jornadaAguasCalientes()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">la jornada aguascalientes</button></li>
+                <li><button onclick="jornadaGuerrero()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">la jornada de guerrero</button></li>
+                <!-- <li><button onclick="vozM()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Voz de Michoacan</button></li>
+                <li><button onclick="sanluishoy()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">San Luis Hoy</button></li>
+                <li><button onclick="diario_de_morelos()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Diario de Morelos</button></li>
+                <li><button onclick="diariodecolima()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Diario de Colima</button></li>
+                <li><button onclick="presente()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">PRESENTE</button></li>
+                <li><button onclick="eldiariodejuarez()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Diario de Juarez</button></li>
+                <li><button onclick="lider()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Lider Informativo</button></li>
+                <li><button onclick="cronicaMexicali()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La Cronica de Mexicali</button></li>
+                <li><button onclick="correoManzanillo()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Correo de Manzanillo</button></li> -->
+
+              </ul>
+            </li>
+
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estados 3<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="iGuasave()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> LA I DE GUASAVE </button></li>
+                <li><button onclick="iMochis()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> LA I DE MOCHIS </button></li>
+                <li><button onclick="iMazatlan()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> LA I DE MAZATLAN </button></li>
+                <li><button onclick="dCuliacan()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> CULIACAN </button></li>
+
+
+              </ul>
+            </li> -->
+
+
+
+           <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pressdisplay  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="vanguardia()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Vanguardia</button></li>
+                <li><button onclick="chile()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Al chile!</button></li>
+                <li><button onclick="caras()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Caras</button></li>
+                <li><button onclick="circulo_tressesenta()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Circulo 360º</button></li>
+                <li><button onclick="cosmopolitan()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Cosmopolitan</button></li>
+                <li><button onclick="eldiariodelpaso()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Diario de El Paso</button></li>
+                <li><button onclick="eldiariodenuevodecasasgrandes()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Diario Noroeste</button></li>
+                <li><button onclick="guardian()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">El Guardián</button></li>
+                <li><button onclick="ellas()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Ellas</button></li>
+                <li><button onclick="laidelcarmen()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La I del Carmen</button></li>
+                <li><button onclick="laidemerida()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">La I de Merida</button></li>
+                <li><button onclick="mens()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Mens Health</button></li>
+                <li><button onclick="misuperdiario()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Mi Súper Diario</button></li>
+                <li><button onclick="motociclismo()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Motociclismo</button></li>
+                <li><button onclick="muy_interesante()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Muy Interesante</button></li>
+                <li><button onclick="muyinteresantejunior()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Muy Interesante Junior</button></li>
+                <li><button onclick="natgeot()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">National Geographic Traveler </button></li>
+                <li><button onclick="natgeo_esp()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">National Geographic en Español</button></li>
+              </ul>
+
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pressdisplay + 1  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="al_dia()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Al Dia</button></li>
+                <li><button onclick="tvynovelas()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">TV Y NOVELAS</button></li>
+                <li><button onclick="amdeselaya()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">am DE CELAYA</button></li>
+                <li><button onclick="am_express_guanajuato()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">am EXPRESS GUANAJUATO</button></li>
+                <li><button onclick="am_express_la_piedad()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">am EXPRESS LA PIEDAD</button></li>
+              </ul> -->
+
+
+               <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Costa rica <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="laRepublica()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> La Republica </button></li>
+                <li><button onclick="laNacion()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> La NACION </button></li>
+                <li><button onclick="financieroCostarica()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> FINANCIERO </button></li>
+                <li><button onclick="laTeja()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> LA TEJA </button></li>
+              </ul>
+            </li> -->
+
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grupo MAC <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="prueba()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Paginas</button></li>
+               <!-- <li><button onclick="pais()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">PAIS</button></li>
+                <li><button onclick="algo()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">algo</button></li> -->
+              </ul>
+            </li>
+
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portadas <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><button onclick="portadas()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Portadas</button></li>
+              </ul>
+            </li> -->
+
+
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </nav>
+
+
+
+
+
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal solo para el df -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">En la edicion de hoy podras encontrar...</h4>
+      </div>
+      <div class="modal-body" id="caja" >
+        <script type="text/javascript">
+        // ********************************************************************
+        // variables de fecha
+        var f = new Date();
+
+          function dia()
+        {
+          var elDia = "Periodico el dia"
+          document.getElementById("caja").innerHTML = elDia.link("http://facturacion.codigobit.com.mx/diarioeldia/periodico/"+f.getFullYear()+"-"+f.getMonth()+"-"+f.getDate()+".pdf");
+        }
+
+
+
+      </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    </script>
+
+  </body>
+</html>

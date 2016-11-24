@@ -228,13 +228,18 @@
       <div class="modal-body" id="caja" >
         <script type="text/javascript">
         // ********************************************************************
-        // variables de fecha
         var f = new Date();
-
-          function dia()
+        // ********************************************************************
+        function dia()
         {
           var elDia = "Periodico el dia"
           document.getElementById("caja").innerHTML = elDia.link("http://facturacion.codigobit.com.mx/diarioeldia/periodico/"+f.getFullYear()+"-"+f.getMonth()+"-"+f.getDate()+".pdf");
+        }
+        // ********************************************************************
+        function capital()
+        {
+          var capital = "Periodicos Capital e Indigos"
+          document.getElementById("caja").innerHTML = capital.link("https://script.google.com/macros/s/AKfycbzzQ8V2LfohYLRw62s-A_u1zTyM6Ywqbp_9zqDj8cV94RFYuGQH/exec");
         }
 
 

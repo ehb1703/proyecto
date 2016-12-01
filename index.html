@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DESCARGAS</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+
   </head>
   <body>
 
@@ -233,7 +233,7 @@
         function dia()
         {
           var elDia = "Periodico el dia"
-          document.getElementById("caja").innerHTML = elDia.link("http://facturacion.codigobit.com.mx/diarioeldia/periodico/"+f.getFullYear()+"-"+f.getMonth()+"-"+f.getDate()+".pdf");
+          document.getElementById("caja").innerHTML = elDia.link("http://facturacion.codigobit.com.mx/diarioeldia/periodico/"+f.getFullYear()+"-"+(f.getMonth()+1)+"-"+f.getDate()+".pdf");
         }
         // ********************************************************************
         function capital()
@@ -251,7 +251,13 @@
         function diarioImagen()
         {
           var capital = "Periodico Diario Imagen"
-          document.getElementById("caja").innerHTML = capital.link("http://www.diarioimagen.net/wp-content/pdfedit/pdfarchive/"+f.getFullYear()+"/"+f.getMonth()+""+f.getFullYear()+"/");
+          document.getElementById("caja").innerHTML = capital.link("http://www.diarioimagen.net/wp-content/pdfedit/pdfarchive/"+f.getFullYear()+"/"+(f.getMonth()+1)+""+f.getFullYear()+"/");
+        }
+        // ********************************************************************
+        function record()
+        {
+          var record = "Record"
+          document.getElementById("caja").innerHTML = record.link("http://www.pressdisplay.com/pressdisplay/es/services/OnlinePrintHandler.ashx?issue=21332016120100000000001001&page=1&paper=A4");
         }
 
 

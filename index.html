@@ -257,7 +257,12 @@
         function record()
         {
           var record = "Record"
-          document.getElementById("caja").innerHTML = record.link("http://www.pressdisplay.com/pressdisplay/es/services/OnlinePrintHandler.ashx?issue=21332016120100000000001001&page=1&paper=A4");
+          var limit=10;
+
+           for (var i = 1; i<=limit; i++)
+           {
+               document.getElementById("caja").innerHTML = record.link("http://www.pressdisplay.com/pressdisplay/es/services/OnlinePrintHandler.ashx?issue=21332016120100000000001001&page="+i+"&paper=A4");
+           }
         }
 
 
